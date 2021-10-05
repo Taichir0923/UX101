@@ -1,0 +1,82 @@
+/* 
+    1. Elementiin torol
+    2. Margin and padding
+    3. DevTools
+*/
+
+
+/* 
+    Elementiin torol
+1. Inline - media tags, inputs, button, a, span
+2. Block - h1-6, p, ul, li, table, div, header, main, section, firgure, footer
+
+*/
+
+/* 
+    display: inline-block - (block => inline)
+    display: block - (inline => block)
+
+*/
+
+/* h1, h2 p {
+    display: inline-block;
+} */
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    display: inline-block;
+    margin: 25px;
+}
+
+.circle {
+    border-radius: 50%;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 300px;
+    background-color: orangered;
+    color: white;
+    border: 5px solid black;
+    margin: 1rem 2rem 0.5rem 5px;
+    padding-top: 1rem;
+}   
+
+.title:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.navigation {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 10px 1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 300ms; /* 1s = 1000ms */
+}  
+
+.active {
+    background-color: #003e57;
+    color: white;
+}
+
+.navigation li:hover {
+    background-color: #003e57;
+    color: #fff;
+    cursor: pointer;
+}
+/* https://cdnjs.com/libraries/font-awesome */
