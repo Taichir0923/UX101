@@ -1,0 +1,71 @@
+/* FLEX BOX */
+/* 
+.wrap {
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.wrap .box {
+    width: 20%;
+    height: 200px;
+    background-color: orangered;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #21295F;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 10px 1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar ul li:hover {
+    background-color: white;
+    color: #21295F;
+} */
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.wrap.inner {
+    height: auto;
+}
+
+.wrap.inner:nth-child(1){
+    justify-content: flex-start;
+}
+
+.wrap.inner:nth-child(2){
+    flex-direction: column;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+}
