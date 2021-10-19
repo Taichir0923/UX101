@@ -141,3 +141,34 @@ body {
 .wrap .inner.odd {
     transform: rotate(18deg);
 }
+
+.wrap .inner.wide {
+    top: 3rem;
+    left: 3rem;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.wrap .inner.wider {
+    top: 5rem;
+    left: 5rem;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.wrap .inner.wider .bull {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap .inner.wider .bull .eye {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: red;
+}
