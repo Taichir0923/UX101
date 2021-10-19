@@ -1,0 +1,57 @@
+/* GridBox - 2 хэмжээст */
+/* FlexBox - 1 хэмжээст */
+/* mnfansubs.net */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 1rem;
+}
+
+/* fractional unit */
+/*  */
+
+.wrap .box {
+    background-color: orangered;
+}
+
+.wrap .box:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.wrap .box:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.wrap .box:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.wrap .box:nth-child(4){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.wrap .box:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
