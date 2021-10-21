@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/Mask_Group_5.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('./images/nature.png');
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+    background-image: url('./images/sun.png');
+    background-size: 70%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.hero .navigation {
+    position: relative;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.hero .navigation .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero .navigation .menu li {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 2rem;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.hero .navigation .menu li:hover {
+    border-radius: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.hero .navigation .menu li:nth-child(1) h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.hero .navigation .menu li:nth-child(1) p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.45em;
+}
+
+.hero .navigation .search {
+    border-right: 2px solid white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .3s;
+    width: max-content;
+    text-align: right;
+    position: relative;
+    /* overflow: hidden; */
+    background-color: rgb(122, 21, 13);
+    z-index: 1;
+}
+
+.hero .navigation .wrap {
+    margin: 0 2.5rem;
+    width: 130px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+    border-radius: 50px;
+}
+
+.hero .navigation .search::before {
+    content: 'Search';
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: left;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    z-index: -1;
+    color: transparent;
+    transition: .3s;
+}
+
+.hero .navigation .search:hover::before {
+    left: -90px;
+    color: white;
+}
+
+
+
+.hero .caption {
+    margin-bottom: 3rem;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero .caption h1 {
+    font-weight: normal;
+    font-size: 6rem;
+}
+
+.hero .caption button {
+    margin-top: 3rem;
+    padding: 10px 3rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
