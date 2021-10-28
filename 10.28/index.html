@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__navigation">
+        <img class="logo" src="https://lend.mn/image/lendmnlogo.svg" alt="" />
+        <ul class="nav">
+          <li>лэндмн хэтэвч</li>
+          <li>лэндмн хувьцаа</li>
+          <li>бидний тухай</li>
+          <li>мэдээ</li>
+          <li>ажилын байр</li>
+          <li>тусламж</li>
+          <li>
+            <img src="https://lend.mn/image/eng.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="swipe">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div style="background-image: url(https://lend.mn/image/carousel/banner.jpg); background-size: cover; background-position: center;" class="swiper-slide"></div>
+          <div class="swiper-slide">
+              <video loop autoplay muted src="https://lend.mn/image/carousel/v1.mp4"></video>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <main class="main">
+        <div class="app">
+            <button class="app-btn">
+                <img src="https://lend.mn/image/applelogo.png" alt="">
+                <p>Appstore-c татах</p>
+            </button>
+            <button class="app-btn">
+                <img src="https://lend.mn/image/googlelogo.png" alt="">
+                <p>Playstore-c татах</p>
+            </button>
+        </div>
+        <div class="container">
+            <div class="wrap"></div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true
+      });
+    </script>
+  </body>
+</html>

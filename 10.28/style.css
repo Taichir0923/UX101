@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #5F717D;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px #cfd4d8;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation .logo {
+    width: 150px;
+}
+
+.header__navigation .nav {
+    list-style: none;
+    display: flex;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+}
+
+.header__navigation .nav li {
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__navigation .nav li:last-child {
+    padding: 1rem !important;
+}
+
+.header__navigation .nav li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6600;
+    transition: .4s ease;
+}
+/* #ff6600 */
+
+.header__navigation .nav li:hover {
+    color: #293C43;
+    cursor: pointer;
+}
+
+.header__navigation .nav li:hover::before {
+    right: 0;
+}
+
+.swipe {
+    width: 100%;
+    height: 540px;
+    background-color: #293C43;
+    margin-top: 56px;
+}
+
+.swipe .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swipe .swiper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.swipe .swiper .swiper-slide video {
+    position: absolute;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100% !important;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main {
+    width: 100%;
+}
+
+.main .app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 4rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.main .app .app-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid dimgray;
+    font-size: 1rem;
+    padding: 5px 4rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px !important;
+    border-radius: 200px;
+    cursor: pointer;
+}
