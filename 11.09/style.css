@@ -198,6 +198,65 @@ body {
     background-color: #34495e9b;
     border-radius: 10px;
     border: 4px solid #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+}
+
+.backdrop:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.backdrop:target .modal {
+    transform: scale(1);
+}
+
+.backdrop .modal {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    transform: scale(0.8);
+    transition: .4s;
+}
+
+.backdrop .modal #close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #34495e;
+    text-decoration: none;
+}
+
+.main .wrap .box a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 2rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+
+.main .wrap .box:hover a {
+    opacity: 1;
 }
 
 @media (min-width: 576px){
