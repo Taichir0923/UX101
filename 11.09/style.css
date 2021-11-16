@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 /* 
@@ -100,6 +101,63 @@ body {
 .header__mobile .input:checked + .toggle .btn .line::after {
     transform: rotate(-315deg);
     bottom: 0;
+}
+
+.header__mobile .nav {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    left: 100%;
+    top: 62px;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+.header__mobile .nav li {
+    list-style: none;
+    width: 250px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__mobile .nav li .item {
+    position: relative;
+    z-index: 10;
+}
+
+.header__mobile .nav li::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    right: 120%;
+    top: 0;
+    transition: .4s ease-in-out;
+    transform: skew(-30deg);
+}
+
+.header__mobile .nav li:hover {
+    color: #34495e;
+    cursor: pointer;
+}
+
+.header__mobile .nav li:hover::before {
+    right: 25px;
+}
+
+.header__mobile .input:checked ~ .nav {
+    left: 0;
 }
 
 
