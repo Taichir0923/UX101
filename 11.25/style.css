@@ -1,0 +1,24 @@
+.title {
+  color: red;
+  border: 2px solid #000;
+}
+
+.title span {
+  color: green;
+}
+
+@media (max-width: 600px) {
+  .title span {
+    color: yellowgreen;
+  }
+}
+
+.title:hover {
+  background-color: red;
+  color: yellow;
+}
+
+.title:hover span {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

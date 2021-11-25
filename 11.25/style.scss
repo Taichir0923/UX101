@@ -1,0 +1,26 @@
+// SASS - Synctactically Awesome Stylesheet
+// CSS - Cascading stylesheete
+// mixin , variables , partial , function
+// Nested 
+
+// style.css => style.scss
+
+
+.title {
+    color: red;
+    border: 2px solid #000;
+    span {
+        color: green;
+        @media (max-width: 600px) {
+            color: yellowgreen;
+        }
+    }
+
+    &:hover {
+        background-color: red;
+        color: yellow;
+        span {
+            color: white;
+        }
+    }
+}
