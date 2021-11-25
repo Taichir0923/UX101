@@ -1,26 +1,9 @@
-// SASS - Synctactically Awesome Stylesheet
-// CSS - Cascading stylesheete
-// mixin , variables , partial , function
-// Nested 
+@import './includes/variables';
+@import './includes/mixin';
+@import './includes/reset';
+@import './includes/header';
+@import './includes/main';
+@import './includes/footer';
 
-// style.css => style.scss
 
-
-.title {
-    color: red;
-    border: 2px solid #000;
-    span {
-        color: green;
-        @media (max-width: 600px) {
-            color: yellowgreen;
-        }
-    }
-
-    &:hover {
-        background-color: red;
-        color: yellow;
-        span {
-            color: white;
-        }
-    }
-}
+// https://inspection.gov.mn/ sass ashiglaj hiih

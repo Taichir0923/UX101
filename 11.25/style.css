@@ -1,24 +1,61 @@
-.title {
-  color: red;
-  border: 2px solid #000;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.title span {
-  color: green;
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 600px) {
-  .title span {
-    color: yellowgreen;
-  }
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.title:hover {
-  background-color: red;
-  color: yellow;
-}
-
-.title:hover span {
+.header {
+  width: 100%;
+  background-color: #34495e;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main--red {
+  background-color: blue;
+}
+
+.main__child {
+  height: 100vh;
+  width: 100%;
+  background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */

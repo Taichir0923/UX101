@@ -1,0 +1,17 @@
+.main { // BEM - Block Element Modify
+    width: 100%;
+    .section {
+        width: 100%;
+        height: 100vh;
+        @include flexCenter(flex-end , flex-end)
+    }
+
+    &--red {
+        background-color: blue;
+    }
+    &__child {
+        height: 100vh;
+        width: 100%;
+        background-color: yellow;
+    }
+}

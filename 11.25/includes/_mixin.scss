@@ -1,0 +1,11 @@
+@mixin flexCenter($align , $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// 2x - 8 = 10
+// x = 9
+
+// 2ax - 8 = 10
+// 
