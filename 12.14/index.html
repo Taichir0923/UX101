@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .wrap .left {
+            background-image: url(https://www.yolo.mn/img/61aeef05b06ed.jpg);
+        }
+        .wrap .right {
+            background-image: url(https://www.yolo.mn/img/61aeef05b0837.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap fixed h-screen w-full flex">
+        <div class="right h-screen w-1/2 bg-green-400 bg-cover bg-bottom"></div>
+        <div class="left h-screen w-1/2 bg-red-400 bg-cover bg-bottom"></div>
+    </div>
+    <header class="fixed flex bg-white top-0 w-full justify-between items-center">
+        <div class="flex flex-col px-4 gap-2">
+            <img class="" style="width: 100px;" src="https://www.yolo.mn/img/61aedf5397b76.png" alt="">
+            <p class="text-xs">Өсвөр үе, залууст ...</p>
+        </div>
+    </header>
+</body>
+</html>
