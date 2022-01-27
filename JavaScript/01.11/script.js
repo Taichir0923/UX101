@@ -206,3 +206,34 @@
     // з. хэрэв нас 76- бол өтөл нас гэж тус тус консолд хэвлэ
 
 // 5. Гараас тоо оруулаад, тухайн тоо хүртэлх бүх тооны нийлбэрийг ол.
+
+// for , while , do while loop
+// var ner = "Narada";
+
+// // for(parameter , condition , operator)
+// for(var i = 0; i < ner.length; i++){
+//     console.log(ner[i]);
+// }
+
+// 1. Стринг өгөгдсөн бол, бүх сондгой индекс дээр байгаа тэмдэгтүүдийг консолд хэвлэ
+
+// 2. 100 хүртэлх бүх 3т хуваагддаг тоонуудыг хэвлэ
+
+// 3. Гараас тоо оруулаад бүх тэгш цифрүүдийн нийлбэрийг ол
+
+// 4. Гараас тоо оруулаад цифрүүдийн нийлбэрийг ол
+
+// var str = prompt('ymar ng string oruul');
+
+// for(var i = 0; i < str.length; i++){
+//     if(i % 2 === 1){
+//         console.log(i + ": " + str[i]);
+//     }
+// }
+
+var too = prompt('too oruul');
+var sum = 0;
+
+for(var i = 0; i < too.length; i++){
+    sum += +too[i];
+}
