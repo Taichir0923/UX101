@@ -231,9 +231,65 @@
 //     }
 // }
 
-var too = prompt('too oruul');
-var sum = 0;
+// var too = prompt('too oruul');
+// var sum = 0;
 
-for(var i = 0; i < too.length; i++){
-    sum += +too[i];
+// for(var i = 0; i < too.length; i++){
+//     sum += +too[i];
+// }
+
+// arrays , object - data structure , Non-Primitive Datatypes
+// []
+var x = [12 , 14 , 15];
+
+// push(utga) - Массивын хамгийн сүүлд өгөгдөл нэмж өгнө
+x.push(20);
+x.push(30);
+
+// pop() - хамгийн сүүлийн элементийг устгана.
+x.pop();
+x.pop();
+x.pop();
+
+// unshift(utga) - Массивын хамгийн эхэнд өгөгдөл нэмж өгнө
+x.unshift(10);
+
+// shift() - хамгийн Эхний элементийг устгана.
+x.shift();
+
+var arr = [54 , 53 , 2,"123" ,6 ,"6" ,"234" , true , 12 , false];
+
+// splice(index , ustgahToo) - массвын дотроос дурын элементүүдийг устгана
+
+// тоо, стринг, бүүлеан холилдсон 10ширхэг өгөгдлийг массив дотор хадгалаад,
+// зөвхөн стринг төрлийн өгөгдлийг консолд хэвлэ
+
+// for(var i = 0; i < arr.length; i++){
+//     if(typeof arr[i] === 'string'){
+//         console.log(arr[i]);
+//     }
+// }
+
+// var hurd = [];
+// var num = +prompt("Too oruul");
+
+// for(var i = 1; i <= 10; i++){
+//     hurd.push(num * i);
+// }
+
+// object {}
+
+var hun = {
+    ner: "Narada",
+    email: "narada@mail.com",
+    utas: 99887766,
+    hobbies: ['kino uzeh' , 'duu sonsoh' , 'pc togloh']
 }
+
+var hun1 = {
+
+}
+
+var members = [hun]
+
+// Гэрт: 10 хэрэглэгчийн дата үүсгээд email-р хэрэглэгч хайх программ бич
