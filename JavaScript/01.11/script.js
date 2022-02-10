@@ -240,24 +240,24 @@
 
 // arrays , object - data structure , Non-Primitive Datatypes
 // []
-var x = [12 , 14 , 15];
+// var x = [12 , 14 , 15];
 
-// push(utga) - Массивын хамгийн сүүлд өгөгдөл нэмж өгнө
-x.push(20);
-x.push(30);
+// // push(utga) - Массивын хамгийн сүүлд өгөгдөл нэмж өгнө
+// x.push(20);
+// x.push(30);
 
-// pop() - хамгийн сүүлийн элементийг устгана.
-x.pop();
-x.pop();
-x.pop();
+// // pop() - хамгийн сүүлийн элементийг устгана.
+// x.pop();
+// x.pop();
+// x.pop();
 
-// unshift(utga) - Массивын хамгийн эхэнд өгөгдөл нэмж өгнө
-x.unshift(10);
+// // unshift(utga) - Массивын хамгийн эхэнд өгөгдөл нэмж өгнө
+// x.unshift(10);
 
-// shift() - хамгийн Эхний элементийг устгана.
-x.shift();
+// // shift() - хамгийн Эхний элементийг устгана.
+// x.shift();
 
-var arr = [54 , 53 , 2,"123" ,6 ,"6" ,"234" , true , 12 , false];
+// var arr = [54 , 53 , 2,"123" ,6 ,"6" ,"234" , true , 12 , false];
 
 // splice(index , ustgahToo) - массвын дотроос дурын элементүүдийг устгана
 
@@ -279,17 +279,66 @@ var arr = [54 , 53 , 2,"123" ,6 ,"6" ,"234" , true , 12 , false];
 
 // object {}
 
-var hun = {
-    ner: "Narada",
-    email: "narada@mail.com",
-    utas: 99887766,
-    hobbies: ['kino uzeh' , 'duu sonsoh' , 'pc togloh']
-}
+// var hun = {
+//     ner: "Narada",
+//     email: "narada@mail.com",
+//     utas: 99887766,
+//     hobbies: ['kino uzeh' , 'duu sonsoh' , 'pc togloh']
+// }
 
-var hun1 = {
+// var hun1 = {
 
-}
+// }
 
-var members = [hun]
+// var members = [hun]
 
 // Гэрт: 10 хэрэглэгчийн дата үүсгээд email-р хэрэглэгч хайх программ бич
+
+// var obj = {
+//     ner: "Narada"
+// }
+
+// obj.hobby = "Kino uzeh";
+// obj.nas = 32;
+// obj.ner = "John";
+
+// concat
+var arr1 = [12 , 13 , 14];
+var arr2 = [15 , 16 , 17];
+
+// spread operator ...
+// 
+
+var mergedArray = [45 , ...arr1 , 34 , 35 , ...arr2 , "ghjdfkjl"];
+
+var person = {
+    ner: "John",
+    nas: 35,
+    email: "john@mail.com",
+    utas: "009999999",
+    password: "pass123"
+}
+
+var  personCopy = {
+    ...person,
+    hobby: "Kino uzeh",
+    email: "hfddslkgjsdklf"
+}
+
+
+var bat = {
+    tootsoo: [124000 , 48000 , 268000],
+    tip: [],
+    finalBill: []
+}
+
+for(var i = 0; i < bat.tootsoo.length; i++){
+    if(bat.tootsoo[i] < 50000){
+        bat.tip.push(bat.tootsoo[i] * .2);
+    } else if (bat.tootsoo[i] >= 50000 && bat.tootsoo[i] < 200000){
+        bat.tip.push(bat.tootsoo[i] * .15)
+    } else {
+        bat.tip.push(bat.tootsoo[i] * .1)
+    }
+    bat.finalBill.push(bat.tootsoo[i] + bat.tip[i]);
+}
